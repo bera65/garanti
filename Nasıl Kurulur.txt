@@ -1,0 +1,9 @@
+Öncelikle garanti klasörünü localhost veya sitenize yükleyin ve servis.sql dosyasýný "servis" adýnda bir veri tabaný açýp içine import edin
+
+Hepsi Bu
+
+Giriþ bilgileri
+Kullanýcý adý > admin
+Þifre > admin
+
+Siteye giriþ yaptýktan sonra kullanýcý resmi olan yerde aþaðý bir ok var orada ayarlar kýsmýndan sitenizin smtp ayarlarý eposta ayarlarý kullanýcý ayarlarý kategori ekleme çýkarma yapabilirsiz
