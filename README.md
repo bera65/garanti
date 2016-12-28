@@ -1,0 +1,2 @@
+# garanti
+Ürünlerin garanti takibi
