@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent; }
+@font-face {
+    font-family:'MyFont';
+	src:url('../fonts/MyFont.eot');
+	src:url('../fonts/MyFont.eot') 
+	format('embedded-opentype'),
+	url('../fonts/MyFont.woff2') 
+	format('woff2'),url('../fonts/MyFont.woff') 
+	format('woff'),url('../fonts/MyFont.ttf') 
+	format('truetype'),url('../fonts/MyFont.svg') 
+	format('svg');
+	font-weight:normal;
+	font-style:normal
+}
+body {
+  font-family: MyFont,  Helvetica, sans-serif;
+  font-size: 14px;
+  text-align:left;
+  line-height: 1.42857;
+  color: #777777;
+  background-color: #EFEEEC; }
+a:hover, a:focus {text-decoration: none;outline: 0;}
+button {outline: 0 !important;}
+ul {padding-left:0px}
+li {list-style:none}
+.pointer {cursor:pointer}
+.clear {clear:both}
+.floatRight {float:right}
+.colorGreen  {color:#74E874}
+.colorRed {color:red}
+.bold {font-weight:bold}
+.onbosluk {height:10px}
+.yaziOrtala {text-align:center}
+.yaziSag {text-align:right}
+.sagBosluksuz {padding-right:0px}
+.solBosluksuz {padding-left:0px}
+.Bosluksuz {padding:0px}
+.azBosluk {padding-left:5px;padding-right:5px}
+.noPadding {padding-left:0px !important;padding-right:0px !important;}
+.sagBorder {border-right:1px solid #ddd}
+.solBorder {border-left:1px solid #ddd}
+.ustmenuKadarBosluk {height:30px}
+.sagaYasla {float:right;}
+.solaYasla {float:left;}
+.bosluk-10 {padding:10px}
+.Sbosluk-10 {padding-left:10px}
+.yaziGri {color:#888}
+.yesilButton {-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background: #3BC0C3;color: #fff;}
+.yesilButton:hover, .yesilButton:focus {background: #56D6D8;color: #fff;}
+.btnTuruncu {-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background: #e54e53;color: #fff;}
+.btnTuruncu:hover, .btnTuruncu:focus {color:#fff;text-decoration: none;}
+.uyari {display: block;padding: 13px;border: 1px solid #EA1E63;margin-bottom: 10px;border-radius: 6px;background: #EA95B2;color: #782052;}
+.basarili {display: block;padding: 13px;border: 1px solid #7DD8DA;margin-bottom: 10px;border-radius: 6px;background: #81DECA;color: #072526;}
+.panel-heading .kirmizi {color:#DB0028}
+.panel-heading .siyah {color:#000}
+#yukleniyor {display:none;}
+#ksonuc {overflow:hidden;width:1px;height:1px;position:absolute;z-index:-9999;top:--999999px}
+a.logo {color:#fff;line-height:47px;font-size:30px;font-weight:bold}
+.logoBox {overflow:hidden}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #000 !important;
+}
+.modal-body {overflow: hidden;}
+#header {width:100%;height:50px;background:#DB0028}
+#ustmenu {width:100%;height:30px;background:#FFF;border-bottom:1px solid #dedede;margin-bottom:5px;text-align:center}
+#ustmenu a {color:#444;font-size:18px;line-height:28px;}
+#ustmenu a.pointer {float:left;font-size:20px;line-height:30px;}
+.ustMenuArama {height:100%;float:right;padding-right:15px;}
+.aramaBox {background:#fff;border:1px solid #ddd;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;width:100%;height:35px;margin-top:7px;padding:0px 7px;}
+.aramaBox #araKutu {border:none;vertical-align: top;height: 29px;background:none;box-shadow:none}
+.aramaBox button, .gonder button {vertical-align: top;border:none;background:#444;color:#fff;height:25px;padding:0px 10px 2px;margin-top:3px}
+.aramaBox button:focus, .aramaBox button:hover, .gonder button:focus, .gonder button:hover {background:#000;color:#fff;}
+.aramaBox #aramaSecenek {top:32px;right:0px;left:auto;width:200px}
+.aramabolum {display:none}
+@media (max-width:768px)
+{
+	.aramaBox .form-group {float:left}
+}
+
+#site {padding:0px}
+#sol {background:#FFF;border-top:1px solid #ddd;padding:0px}
+#sag {border-left:1px solid #dedede;}
+#orta {width:100%}
+@media (min-width:768px)
+{
+	#sol {width:20%;}
+	#sag {width:80%;}
+	#sol, #sag {min-height:571px}
+	.gizle {display:none}
+}
+@media (max-width:768px)
+{
+	.gizle {display:block}
+	#sol {display:none;height:auto;padding-bottom: 20px;}
+}
+
+.kullaniciBolumu {text-align:center;padding-top:30px;border-bottom:1px solid #e0e0e0;padding-bottom:15px}
+.kullaniciBolumu img {-webkit-border-radius: 78px;-moz-border-radius: 78px;border-radius: 78px;border:4px solid #dedede}
+.kullaciresmi {position:relative}
+.kullaciresmi .dropdown {position:absolute;right:10px;bottom:40px;}
+.kullaciresmi button {position:relative;padding:5px 15px;padding: 4px 20px;font-size:15px;color:#fff;background:#15ACA7;border-color:#15ACA7;text-transform:uppercase;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.kullaciresmi button:after {content:"";position:absolute;width:10px;height:10px;left:-5px;top:10px;background:#15ACA7;-ms-transform: rotate(45deg); /* IE 9 */-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */transform: rotate(45deg);}
+.kullaniciBolumu p {font-size:18px;color:#000;font-weight:400;padding-top:10px}
+a.kullaniciLink {color:#444}
+#icerikSol a.kullaniciLink {color:#666}
+@media (max-width:768px)
+{
+	.kullaciresmi .dropdown {right:50px;}
+}
+
+h4.baslik {line-height:35px;text-align:center;font-weight:bold;font-size: 16px;color: #333;}
+.kategoriler li a {display:block;padding-left:15px;padding-right:15px;line-height:35px;border-bottom:1px solid #eee;width:100%;border-left:2px solid #fff;color:#777}
+.kategoriler li a:hover {background:#000;color:#fff;border-left:2px solid #DB0028;cursor:pointer}
+.kategoriler li i {padding-right:9px}
+
+.urunler li {overflow:hidden;padding-top:5px;padding-bottom:5px;cursor:pointer}
+.panel {margin-bottom: 10px;}
+.panel.garantiyok {border-left:3px solid #999}
+.garantiyok span {color: #999}
+.panel.garantivar {border-left:3px solid #15ACA7}
+.garantivar span {color: #15ACA7}
+.urunler li .musteri {line-height:36px}
+.urunler li div.urun {border-left:1px solid #eee;border-right:1px solid #eee}
+.urunler .silDuzenle {text-align:center;line-height:36px}
+.urunler .silDuzenle a {font-size:14px;color: #444;padding-right: 10px;border:1px solid #dedede;padding:3px 10px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;margin-right:5px;}
+.urunler .silDuzenle a:hover {background:#000;color:#fff;border-color:#000}
+@media (max-width:768px)
+{
+	.urunler li div.urun {border-left:1px solid #eee;border-right:none}
+	.urunler li div.silDuzenle {border-top:1px solid #eee;padding-top:3px}
+}
+
+/** Kategori **/
+.kbaslik {font-size:22px;line-height:36px;font-weight:bold;height:40px;padding-left:20px;border-bottom:1px solid #dedede;margin-bottom:15px;color:#000;text-shadow:0px 0px 1px #FFF}
+
+h3.panelh3 {color: #666;margin-bottom: 14px;text-transform: uppercase;font-weight: bold;font-size: 15px;line-height: 30px;border-bottom:1px solid #eee}
+div.grub {margin-bottom:12px;padding:10px;border:1px solid #eee;}
+div.grub > div {overflow:hidden;}
+.serino {color:#000}
+.buttonlar, #yenikayit {overflow:hidden;padding:0px 0px 12px}
+#yenikayit, .cikarma {display:none}
+#yenikayit form > div.col-sm-6 {padding-right:40px}
+#yenikayit form > div label {color:black;text-transform:uppercase;padding-bottom:5px}
+form #urunadi {height: 108px;}
+#sonuc, #usonuc {position:relative;}
+#sonuc ul, #usonuc ul {background:#FFF;border:1px solid #ddd;position:absolute;width:100%}
+#sonuc ul > li, #usonuc ul > li {line-height:25px;height:28px;border-bottom:1px solid #ddd;padding-left:10px;cursor:pointer}
+
+/** SAYFA ***/
+.musteriBilgi {height:auto;overflow: inherit;margin-bottom: 35px;}
+.musteriBilgi img {-webkit-border-radius: 80px;-moz-border-radius: 80px;border-radius: 80px;border:5px solid #eee}
+.musteriBilgi h4 {color: #666;text-transform: uppercase;font-weight: bold;font-size: 15px;line-height: 30px;}
+.musteribosluk {display:block;height:40px}
+.musteriboslukiki {display:block;height:100px}
+.musteriadres {display:block;height:90px;padding-top:15px}
+.musteriadres i {width:27px}
+.musteriadres a {color:#777}
+.musteri_button > a {margin-right:10px;}
+@media (max-width:768px)
+{
+	.musteriBilgi {text-align:center}
+	.musteribosluk, .musteriboslukiki  {display:none}
+	.musteri_button > a {margin-bottom:10px;width:100%}
+}
+.ambiance-custom {
+  background: #000000;
+  color: #00FF00;
+  padding: 10px;
+  margin-right: 100px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#uyari {position:fixed;width:100%;height:100%;left:0px;top:0px;background:rgba(0,0,0,.1);z-index:99;display:none}
+.uyariPencere {width:380px;position:absolute;top:50%;left:50%;margin-left:-190px;margin-top:-75px;border:1px solid #E2B1B9;background:#fff;height:150px;text-align:center}
+.uyariPencere .baslik {display: block;height: 33px;border-bottom: 1px solid #eee;line-height: 35px;font-size: 16px;font-weight: bold;text-transform: uppercase;}
+.uyariPencere .icerik {line-height: 57px;position:relative;cursor:default}
+.uyariPencere .buttonlar button {margin-right:10px;padding-left:25px;padding-right:25px;}
+.uyariPencere .pencerekapat {cursor:pointer;float:right;color:#ccc;margin-right:15px}
+
+.urunlerdiv + .buttonlar {display:none}
+
+.anasayfayaDon a {font-size:15px;color:#444;}

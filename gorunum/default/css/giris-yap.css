@@ -1,0 +1,15 @@
+.giris_alani {margin-left:auto;margin-right:auto;max-width:600px;width:auto;margin-top:100px}
+.uyeform > div {padding-bottom:15px}
+.uyeform .btn {float:right}
+.uyeform h4 {font-weight:bold;text-transform:uppercase;font-size:16px;}
+.clear {clear:both}
+.yuzdeYuz {display:block;width:100%;}
+.soldaKal label {padding-right:20px}
+.aciklama {padding:10px 0px}
+.form-control {-webkit-box-shadow: none;box-shadow: none;border-color:#ddd}
+.girisResim {text-align:center}
+.girisResim img {-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;border:4px solid #FFF}
+p > a {color:#777}
+#sifreform {display:none}
+.form-group {margin-bottom:0px}
+.uyeform.baslik {width:100%;background:#fff;border:1px solid #ddd;clear:both;margin-top:10px;margin-bottom:10px;padding:5px 8px}

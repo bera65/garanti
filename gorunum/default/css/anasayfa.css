@@ -1,0 +1,21 @@
+.uclu > .panel {border:none !important}
+.ickisim > div {padding:0px 15px;}
+.ickisim .ust_kisim {height:90px;}
+.ickisim .ust_kisim .sayi {font-size:16px;text-align:center;color:#555;padding-top:8px}
+.ickisim .ust_kisim .sayi span {font-size:25px;}
+.ickisim .ust_kisim i {font-size:40px;color:#555}
+.ickisim .ust_kisim .icon {padding-top:25px}
+.ickisim .alt_kisim {height:30px;line-height:30px;-webkit-border-bottom-right-radius: 4px;-webkit-border-bottom-left-radius: 4px;-moz-border-radius-bottomright: 4px;-moz-border-radius-bottomleft: 4px;border-bottom-right-radius: 4px;border-bottom-left-radius: 4px;}
+
+.bir .ickisim .ust_kisim, .bir .ickisim span  {color: #DB0028;}
+.bir .ickisim .alt_kisim {background: #DB0028;color:#fff}
+
+.iki .ickisim .ust_kisim, .iki .ickisim span {color: #000;}
+.iki .ickisim .alt_kisim {background: #000;color:#fff}
+
+.uc .ickisim .ust_kisim, .uc .ickisim span {color: #15ACA7;}
+.uc .ickisim .alt_kisim {background: #15ACA7;color:#fff}
+.panel-body ul li {line-height:30px;line-height:30px;border-bottom:1px solid #eee}
+.panel-body ul li.urun9 {border:none}
+.panel-body ul li a {color:#555;cursor:pointer}
+.ana_istatistik {overflow:hidden;padding-right:15px}
