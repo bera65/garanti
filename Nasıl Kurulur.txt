@@ -1,9 +1,13 @@
-Öncelikle garanti klasörünü localhost veya sitenize yükleyin ve servis.sql dosyasını "servis" adında bir veri tabanı açıp içine import edin
+Ã–ncelikle garanti klasÃ¶rÃ¼nÃ¼ localhost veya sitenize yÃ¼kleyin ve servis.sql dosyasÄ±nÄ± "servis" adÄ±nda bir veri tabanÄ± aÃ§Ä±p iÃ§ine import edin
 
 Hepsi Bu
 
-Giriş bilgileri
-Kullanıcı adı > admin
-Şifre > admin
+GiriÅŸ bilgileri
+KullanÄ±cÄ± adÄ± > admin
+Åifre > admin
 
-Siteye giriş yaptıktan sonra kullanıcı resmi olan yerde aşağı bir ok var orada ayarlar kısmından sitenizin smtp ayarları eposta ayarları kullanıcı ayarları kategori ekleme çıkarma yapabilirsiz
+Siteye giriÅŸ yaptÄ±ktan sonra kullanÄ±cÄ± resmi olan yerde aÅŸaÄŸÄ± bir ok var orada ayarlar kÄ±smÄ±ndan sitenizin smtp ayarlarÄ± eposta ayarlarÄ± kullanÄ±cÄ± ayarlarÄ± kategori ekleme Ã§Ä±karma yapabilirsiz
+
+EÄŸer kurduÄŸunuz dizin "garanti" adÄ±nda bir dizin deÄŸil ise veritabanÄ±nÄ± phpmyadmin den aÃ§Ä±p ayarlar kÄ±smÄ±ndan dizininizin adÄ±nÄ± girin
+
+Ve sitenizde rewrite url aÃ§Ä±k deÄŸilse gene ayarlar tablosundan DuzgunUrl yi 0 yapÄ±n
