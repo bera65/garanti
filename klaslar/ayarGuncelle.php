@@ -46,7 +46,7 @@
 				}
 			}
 		}
-		header('Location: '.LinkYapisi::php('ayarlar', 'sayfa', 'kategori'));
+		header('Location: '.LinkYapisi::php('ayarlar', 'sayfa', 'kategoriler'));
 	}
 	else if (Denetle::degerGetir('sil'))
 	{
