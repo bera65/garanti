@@ -98,7 +98,7 @@ window.setTimeout(function(){
 		</div>
 		<div class="col-sm-2 col-xs-12 silDuzenle">
 			<a  onClick="urunuSil({strtotime($urun.satis_tarihi)}{$urun.id_urun|escape:'html':'UTF-8'})"class="kirmiziButton" title="Sil"><i class="fa fa-trash-o" aria-hidden="true"></i></a> 
-			<a href="{$base_dir}duzenle/{$urun.id_urun}" class="maviButton" title="Düzenle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+			<a href="{LinkYapisi::php('sayfa', 'duzenle', {$urun.id_urun})}" class="maviButton" title="Düzenle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 		</div>
 	</li>
 {/foreach}

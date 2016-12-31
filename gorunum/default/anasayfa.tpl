@@ -90,7 +90,7 @@
 			<div class="panel-body">
 				<ul>
 					{foreach $musteriler as $musteri key=$k}
-						<li class="urun{$k}"><a href="{$base_dir}musteri/{$musteri.id_musteri}">{$musteri.musteri_ad}</a></li>
+						<li class="urun{$k}"><a href="{LinkYapisi::php('musteriler', 'idmusteri', {$musteri.id_musteri})}">{$musteri.musteri_ad}</a></li>
 					{/foreach}
 				</ul>
 			</div>

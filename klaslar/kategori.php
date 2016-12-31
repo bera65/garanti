@@ -22,7 +22,7 @@
 		
 /*** BU MÜŞTERİ VARMI ***/
 		$varmi = $VT->varmi('musteriler',  'musteri_ad = "'.$musteriad.'"');
-		if ($varmi)
+		if ($varmi == 1)
 		{
 			$musteriID = $VT->tekSatirGetir('musteriler',   'musteri_ad = "'.$musteriad.'"', 'id_musteri');
 		}

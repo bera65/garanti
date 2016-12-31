@@ -50,7 +50,7 @@
 			}
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else if(Denetle::degerGetir('duzenle'))
 	{
@@ -66,7 +66,7 @@
 			}
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else if (Denetle::sayisal(Denetle::degerGetir('urunsil')) AND Denetle::strlen(Denetle::degerGetir('numara')) > 10)
 	{
@@ -79,7 +79,7 @@
 			$sil = $VT->sil('urunler', 'id_urun = '.$urun_id.'');
 			$sil = $VT->sil('urun_detay', 'id_urun = '.$urun_id.'');
 			$sil = $VT->sil('musteriler', 'id_musteri = '.$id.'');
-			header('Location: '.$dizin.'musteriler/');
+			header('Location: '.LinkYapisi::php('musteriler'));
 		}
 	}
 	else if (Denetle::sayisal(Denetle::degerGetir('musteriekle')) AND Denetle::strlen(Denetle::degerGetir('musteriekle')) == 1 AND Denetle::isimmi(Denetle::degerGetir('musteriad')))
@@ -141,7 +141,7 @@
 					$upload->Process('./img/musteri/');
 				}
 		}
-		header('Location: '.$dizin.'musteriler/');
+		header('Location: '.LinkYapisi::php('musteriler'));
 	}
 	else
 	{

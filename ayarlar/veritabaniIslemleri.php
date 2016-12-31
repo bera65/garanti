@@ -60,8 +60,9 @@ class VT
 	}
 	public static function varmi($tablo,  $kosul) {
 		global $db;
-		$bilgiler = $db->query('SELECT * FROM '.$tablo.' WHERE '.$kosul.'', PDO::FETCH_ASSOC);
-		if ($bilgiler->fetchColumn())
+		$bilgiler = $db->prepare('SELECT * FROM '.$tablo.' WHERE '.$kosul.'');
+		$bilgiler->execute();
+		if ($bilgiler->rowCount())
 			return 1;
 		else
 			return 0;

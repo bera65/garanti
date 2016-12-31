@@ -3,7 +3,7 @@
 	<span id="yenikayitButton" class="ekle btn yesilButton" onClick="yeniKayit()">Yeni Kayıt Ekle</span>
 </div>
 <div id="yenikayit">
-	<form method="post" enctype="multipart/form-data" action="{$base_dir}musteriler/">
+	<form method="post" enctype="multipart/form-data" action="{LinkYapisi::php('musteriler')}">
 		<div class="col-sm-6">
 			  <div class="form-group">
 				<label>Müşteri Adı</label>
@@ -46,7 +46,7 @@
 		<div class="col-sm-5 col-xs-6 musteri"><a href="{$base_dir}musteri/{$musteri.id_musteri}">{kacurunuvar($musteri.id_musteri)}</a></div>
 		<div class="col-sm-2 col-xs-12 silDuzenle">
 			<a  onClick="musteriSil({strtotime($musteri.kayit_tarihi)}{$musteri.id_musteri|escape:'html':'UTF-8'})"class="kirmiziButton" title="Sil"><i class="fa fa-trash-o" aria-hidden="true"></i></a> 
-			<a href="{$base_dir}musteriDuzenle/{$musteri.id_musteri}" class="maviButton" title="Düzenle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+			<a href="{LinkYapisi::php('musteriler', 'duzenle', {$musteri.id_musteri})}" class="maviButton" title="Düzenle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 		</div>
 	</li>
 {/foreach}

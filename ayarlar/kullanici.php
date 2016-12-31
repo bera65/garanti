@@ -18,7 +18,7 @@
 						$_SESSION['garanti_kullanici']= $kullanici;
 						$_SESSION['garanti_anahtar']= $bilgi['anahtar'];
 					}
-					header('Location: ');
+					header('Location: '.$dizin.'');
 				}
 				else
 					return 1;
@@ -202,7 +202,7 @@
 					$kullaniciAnahtar = VT::teksatirGetir('kullanicilar', 'kullanici_adi = "'.$kullanici .'"', 'anahtar');
 					$_SESSION['garanti_kullanici']= $kullanici;
 					$_SESSION['garanti_anahtar']= $kullaniciAnahtar;
-					header('Location: '.$dizin.'profilim/');
+					header('Location: '.LinkYapisi::php('profilim'));
 				}
 			}
 		}
@@ -257,7 +257,7 @@
 			else
 			{
 				session_destroy();
-				header('Location: '.$dizin.'girisyap/');
+				header('Location: '.LinkYapisi::php('girisyap'));
 			}
 		}
 	}
@@ -267,6 +267,6 @@
 		$girisYapanKullanici = 'misafir';
 		$smarty->assign(array('giris'=> $giris,));
 		if ($sayfa != 'girisyap')
-			header('Location: '.$dizin.'girisyap/');
+			header('Location: '.LinkYapisi::php('girisyap'));
 	}
 	

@@ -69,4 +69,4 @@
 		$sayfa->yapi('ara', 'ara.css');
 	}
 	else
-		header('Location: '.$dizin.'sayfa-bulunamadi.php');
+		header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));

@@ -26,7 +26,7 @@
 			}
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else if (Denetle::taglarisil(Denetle::degerGetir('duzenle')))
 	{
@@ -39,7 +39,7 @@
 			$sayfa->yapi('sayfa-duzenle', 'sayfa.css', 'sayfa.js');
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else if (Denetle::taglarisil(Denetle::degerGetir('urunduzenle')))
 	{
@@ -57,10 +57,10 @@
 			
 			$duzenle = urunsat($musteriad, $kategori, $satistarihi,  $garantisuresi, $urunler, $serinolar, $aciklama, $urunno, $detay);
 			$musteriID = $VT->tekSatirGetir('musteriler',   'musteri_ad = "'.$musteriad.'"', 'id_musteri');
-				header('Location: '.$dizin.'musteriler/'.$musteriID.'');
+				header('Location: '.LinkYapisi::musteriDuzenle($musteriID));
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else if (Denetle::sayisal(Denetle::degerGetir('urunsil')) AND Denetle::strlen(Denetle::degerGetir('numara')) > 10)
 	{
@@ -73,14 +73,14 @@
 			$sil = $VT->sil('urun_detay', 'id_urun_detay = '.$id.' AND duzenlenme_tarihi = "'.$tarih.'"');
 			$urun_kaldimi = $VT->varmi('urun_detay', 'id_urun = '.$anaUrun.'');
 			if ($urun_kaldimi)
-				header('Location: '.$dizin.'duzenle/'.$anaUrun.'');
+				header('Location: '.LinkYapisi::sayfaDuzenle($anaUrun));
 			else
 			{
 				$kategori = $VT->tekSatirGetir('urunler', 'id_urun = '.$anaUrun.'', 'id_kategori');
 				$kategoriSeo = $VT->tekSatirGetir('kategoriler', 'id_kategori = '.$kategori.'', 'kategori_seo');
 				
 				$sil = $VT->sil('urunler', 'id_urun = '.$anaUrun.'');
-				header('Location: '.$dizin.''.$kategori.'_'.$kategoriSeo.'');
+				header('Location: '.LinkYapisi::kategori($kategori, $kategoriSeo));
 			}
 		}
 		else if ($VT->varmi('urunler', 'id_urun = '.$id.' AND satis_tarihi = "'.$tarih.'"'))
@@ -90,10 +90,10 @@
 			
 			$sil = $VT->sil('urunler', 'id_urun = '.$id.'');
 			$sil = $VT->sil('urun_detay', 'id_urun = '.$id.'');
-			header('Location: '.$dizin.''.$kategori.'_'.$kategoriSeo.'');
+			header('Location: '.LinkYapisi::kategori($kategori, $kategoriSeo));
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else
-		header('Location: '.$dizin.'sayfa-bulunamadi.php');
+		header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));

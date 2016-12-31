@@ -46,7 +46,7 @@
 				}
 			}
 		}
-		header('Location: '.$dizin.'ayarlar/kategoriler');
+		header('Location: '.LinkYapisi::php('ayarlar', 'sayfa', 'kategori'));
 	}
 	else if (Denetle::degerGetir('sil'))
 	{

@@ -33,7 +33,7 @@
 			$sayfa->yapi('kategori');
 		}
 		else
-			header('Location: '.$dizin.'sayfa-bulunamadi.php');
+			header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));
 	}
 	else
-		header('Location: '.$dizin.'sayfa-bulunamadi.php');
+		header('Location: '.LinkYapisi::php('sayfa-bulunamadi'));

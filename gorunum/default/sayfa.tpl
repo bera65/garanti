@@ -25,8 +25,8 @@
 		{/if}
 		</div>
 		<div class="musteri_button">
-			<a href="{$base_dir}duzenle/{$urun.id_urun}" class="btn btn-default">Bu Sayfayı Düzenle</a>
-			<a href="{$base_dir}musteri/{$urun.id_musteri}" class="btn btn-default">Müşterinin Tüm Ürünleri</a>
+			<a href="{LinkYapisi::sayfaDuzenle($urun.id_urun)}" class="btn btn-default">Bu Sayfayı Düzenle</a>
+			<a href="{LinkYapisi::musteriDuzenle($urun.id_musteri)}" class="btn btn-default">Müşterinin Tüm Ürünleri</a>
 		</div>
 	</div>
 </div>

@@ -41,7 +41,7 @@
 			if ($sayfaGetir == 'cikis')
 			{
 				session_destroy();
-				header('Location: '.$dizin.'girisyap/');
+				header('Location: '.LinkYapisi::php('girisyap'));
 			}
 			$sayfa->yapi('ayarlar-'.$sayfaGetir.'', NULL, 'ayarlar.js');
 		}

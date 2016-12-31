@@ -1,19 +1,56 @@
-<div class="giris_alani">
+<div id="girisAlani" class="giris_alani">
 	<div class="girisResim col-sm-4"><img src="{$base_dir}img/musteri/kullanici-bos.jpg" alt="Kullanici Resmi" width="150px" height="150px"/></div>
 	<div class="girisForm col-sm-8">
 		<form action="{$base_dir}girisyap/" method="post" class="uyeform" id="girisForm">
 			<div><h4>Üye Girişi</h4></div>
 			{if $hata == 1}
-				<div class="alert alert-danger" role="alert">Kullanici Bulunamadı</div>
+				<script type="text/javascript">
+					$(document).ready(function() { 
+						$.ambiance({
+						message: "Kullanıcı Bulunamadı", 
+						title: "Hata!",
+						type: "error",
+						timeout: 4
+						});
+						$('#girisAlani').addClass('animated shake');
+					});
+				</script>
 			{/if}
 			{if $hata == 2}
-				<div class="alert alert-danger" role="alert">Yeni şifre için 1 dk geçmesi gerekir</div>
+				<script type="text/javascript">
+					$(document).ready(function() { 
+						$.ambiance({
+						message: "Yeni şifre için 1dk bekeyiniz", 
+						title: "Hata!",
+						type: "error",
+						timeout: 4
+						});
+					});
+				</script>
 			{/if}
 			{if $hata == 4}
-				<div class="alert alert-success" role="alert">Mail Gönderildi</div>
+				<script type="text/javascript">
+					$(document).ready(function() { 
+						$.ambiance({
+						message: "Yeni sifrenizi epostanızdan kontrol ediniz", 
+						title: "Basarılı!",
+						type: "success",
+						timeout: 4
+						});
+					});
+				</script>
 			{/if}
 			{if $hata == 5}
-				<div class="alert alert-danger" role="alert">Mail Gönderilemedi Lütfen Gerekli Ayarları Kontrol Edin</div>
+				<script type="text/javascript">
+					$(document).ready(function() { 
+						$.ambiance({
+						message: "Mail ayarlarınız kontrol ediniz", 
+						title: "Hata!",
+						type: "error",
+						timeout: 4
+						});
+					});
+				</script>
 			{/if}
 			<div class="input-group margin-bottom-sm">
 			  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>

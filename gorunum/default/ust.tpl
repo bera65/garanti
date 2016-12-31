@@ -32,7 +32,7 @@
 		{if $sayfaAdi != 'girisyap'}
 			<div class="ustMenuArama col-sm-3 col-xs-12">
 				<div class="aramaBox sagaYasla">
-					<form class="form-inline" action="{$base_dir}ara/" method="post">
+					<form class="form-inline" action="{LinkYapisi::php('ara')}" method="post">
 						  <div class="form-group">
 							<input type="text" class="form-control" id="araKutu" name="kelime" placeholder="Arama yap.." autocomplete="off" autofocus>
 						  </div>
@@ -65,9 +65,9 @@
 								<span class="caret"></span>
 							  </button>
 							  <ul class="dropdown-menu" aria-labelledby="statuDegistir">
-								<li><a href="{$base_dir}profilim/">Profilim</a></li>
-								<li><a href="{$base_dir}ayarlar/">Ayarlar</a></li>
-								<li><a href="{$base_dir}ayarlar/cikis">Çıkış Yap</a></li>
+								<li><a href="{LinkYapisi::php('profilim')}">Profilim</a></li>
+								<li><a href="{LinkYapisi::php('ayarlar')}">Ayarlar</a></li>
+								<li><a href="{LinkYapisi::php('ayarlar', 'sayfa', 'cikis')}">Çıkış Yap</a></li>
 							  </ul>
 						</div>
 					</div>
@@ -82,7 +82,7 @@
 					</ul>
 					<h4 class="baslik">LINKLER</h4>
 					<ul>
-						<li><a href="{$base_dir}musteriler/"><i class="fa fa-user" aria-hidden="true"></i> Müşeteriler</a></li>
+						<li><a href="{LinkYapisi::php('musteriler')}"><i class="fa fa-user" aria-hidden="true"></i> Müşeteriler</a></li>
 					</ul>
 				</div>
 			</div>
