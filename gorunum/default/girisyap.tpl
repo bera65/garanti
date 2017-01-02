@@ -1,7 +1,7 @@
 <div id="girisAlani" class="giris_alani">
 	<div class="girisResim col-sm-4"><img src="{$base_dir}img/musteri/kullanici-bos.jpg" alt="Kullanici Resmi" width="150px" height="150px"/></div>
 	<div class="girisForm col-sm-8">
-		<form action="{$base_dir}girisyap/" method="post" class="uyeform" id="girisForm">
+		<form action="{$base_dir}girisyap.php" method="post" class="uyeform" id="girisForm">
 			<div><h4>Üye Girişi</h4></div>
 			{if $hata == 1}
 				<script type="text/javascript">
@@ -73,7 +73,7 @@
 			</div>
 			<button type="submit" class="btn yesilButton">Giriş Yap</button>
 		</form>
-		<form action="{$base_dir}girisyap/" method="post" class="uyeform" id="sifreform">
+		<form action="{$base_dir}girisyap.php" method="post" class="uyeform" id="sifreform">
 			<div><h4>Şifre Hatırlat</h4></div>
 			<div class="input-group margin-bottom-sm">
 			  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
