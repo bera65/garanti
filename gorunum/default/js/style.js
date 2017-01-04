@@ -69,7 +69,7 @@ $("#cssmenu").menumaker({
 });
 });
 })(jQuery);
-var dizin = "/garanti/";
+var dizin = "/garanti-master/";
 function urunGoster(numara) {
 	var baslik = $('li#urun_' + numara + '').data('baslik');
 	$.ajax({
