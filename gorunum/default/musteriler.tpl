@@ -42,8 +42,8 @@
 <ul id="urunler" class="urunler">
 {foreach $musteriler as $musteri}
 	<li id="urun_{$musteri.id_musteri}" class="panel urunlerdiv" data-kategori="musteri">
-		<div class="col-sm-5 col-xs-6 musteri"><a href="{$base_dir}musteri/{$musteri.id_musteri}">{$musteri.musteri_ad|escape:'html':'UTF-8'}</a></div>
-		<div class="col-sm-5 col-xs-6 musteri"><a href="{$base_dir}musteri/{$musteri.id_musteri}">{kacurunuvar($musteri.id_musteri)}</a></div>
+		<div class="col-sm-5 col-xs-6 musteri"><a href="{LinkYapisi::php('musteriler', 'idmusteri', {$musteri.id_musteri})}">{$musteri.musteri_ad|escape:'html':'UTF-8'}</a></div>
+		<div class="col-sm-5 col-xs-6 musteri"><a href="{LinkYapisi::php('musteriler', 'idmusteri', {$musteri.id_musteri})}">{kacurunuvar($musteri.id_musteri)}</a></div>
 		<div class="col-sm-2 col-xs-12 silDuzenle">
 			<a  onClick="musteriSil({strtotime($musteri.kayit_tarihi)}{$musteri.id_musteri|escape:'html':'UTF-8'})"class="kirmiziButton" title="Sil"><i class="fa fa-trash-o" aria-hidden="true"></i></a> 
 			<a href="{LinkYapisi::php('musteriler', 'duzenle', {$musteri.id_musteri})}" class="maviButton" title="Düzenle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
