@@ -40,7 +40,7 @@ INSERT INTO `ayarlar` (`id_ayar`, `veri`, `deger`) VALUES
 (1, 'Tema', 'default'),
 (2, 'SiteAd', 'Servis & Garanti Takip'),
 (3, 'DuzgunUrl', '0'),
-(4, 'Dizin', '/garanti/'),
+(4, 'Dizin', '/garanti-master/'),
 (5, 'smtpEmail', 'kullanici@siteniz.com'),
 (6, 'smtpAdres', 'smtp.siteniz.com'),
 (7, 'smtpSifre', 'sifre'),
