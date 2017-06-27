@@ -14,7 +14,7 @@
 		$serinolar = Denetle::taglarisil($serinolar);
 		$aciklama = Denetle::taglarisil($aciklama);
 		$urunsayisi = count($urunler);
-	//echo $musteriad.' - '.$kategori.' - '.$satistarihi.' - '.$garantisuresi.' - '.$aciklama;
+
 		$tarih = date('Y-m-d',strtotime($satistarihi) );
 		$garantibitis = date('Y-m-d', strtotime("+".$garantisuresi." months", strtotime($satistarihi)));
 		$simdi =  date('Y-m-d H:i:s');
@@ -46,9 +46,16 @@
 		{
 			$sonId = $VT->duzenle('urunler', $degerler, 'id_urun = '.$urunno.'' );
 			$urunnoo = $urunno;
+			//print_r($degerler);
 		}
 		else
 			$urunnoo = $VT->yaz('urunler', $degerler );
+		$detaylar = $VT->getir('urun_detay','id_urun = '.$urunnoo.'');
+		$numara = array();
+		foreach ($detaylar as $dt)
+		{
+			$numara[] = $dt['id_urun_detay'];
+		}
 	/*** URUN DETAY ***/
 		for($a=0; $a < $urunsayisi; $a++)
 		{
@@ -67,7 +74,7 @@
 			{
 				if ($urunno)
 				{
-					$sonId = $VT->duzenle('urun_detay', $degerler, 'id_urun_detay = '.$detay[$a].' ' );
+					$sonId = $VT->duzenle('urun_detay', $degerler, 'id_urun_detay = '.$numara[$a].' ' );
 				}
 				else
 					$sonUrunid = $VT->yaz('urun_detay', $degerler );
